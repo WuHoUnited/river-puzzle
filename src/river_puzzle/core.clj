@@ -21,7 +21,7 @@
 
 
 ;; We will enumerate the list of legal moves.
-;; It is a large block of code, but very straightforward.
+;; This piece is large but very straightforward.
 (defne move-o
   "Taking move from start position results in end position."
   [start move end]
@@ -121,10 +121,10 @@
 ;; Generate 5 random legal puzzles with solutions their solutions.
 ;; You will notice that is gives very generic answers.
 (run 5 [q]
-     (fresh [start moves end] 
+     (fresh [start moves end]
             (river-puzzle-o start moves end)
             (== q {:start start
-                   :moves moves 
+                   :moves moves
                    :end end})))
 
 ;; Generate 5 random legal puzzles ending with everybody on the right
